@@ -1,24 +1,16 @@
-body {
+html{
   font-family: 'Poppins', sans-serif;
   background-image: url("Background.png");
   background-position: center;
+  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  height: 100%;
-  max-height: 1500px;
   z-index: 20;
   letter-spacing: 0.5px;
   font-weight: 500;
 }
 
-header {
-  min-height: 50px
-}
 
-footer {
-  min-height: 50px;
-}
 
 /* -------Header------- */
 .header {
@@ -59,36 +51,7 @@ footer {
 
 /* -------Inputs------- */
 
-input[type="date"]::-webkit-datetime-edit, input[type="date"]::-webkit-inner-spin-button, input[type="date"]::-webkit-clear-button {
-  color: #fff;
-  position: relative;
-}
 
-input[type="date"]::-webkit-datetime-edit-year-field{
-  position: absolute ;
-  border-left:1px solid #8c8c8c;
-  padding: 0 2px 2px 2px;
-  color:grey;
-  left: 60px;
-}
-
-input[type="date"]::-webkit-datetime-edit-month-field{
-  position: absolute ;
-  border-left:1px solid #8c8c8c;
-  padding: 0 2px 2px 2px;
-  color:grey;
-  left: 30px;
-}
-
-
-input[type="date"]::-webkit-datetime-edit-day-field{
-  position: absolute ;
-  color:grey;
-    padding: 0 2px 2px 2px;
-  left: 2px;
-
-}
-/* -------------- */
 input[type=text] {
   padding: 12px 90px 12px 20px;
   border: 2px solid #ccc;
@@ -214,8 +177,16 @@ a {
 }
 
 /* Responsive */
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 900px) {
 
+html{
+    background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1920px;
+
+}
   .logo {
     margin: 0 10px 0 80px;
     text-align: center;
@@ -268,6 +239,10 @@ input[type=date]::-webkit-datetime-edit { padding: 0 8.5em 0 0; }
       display: inline-block;
       font-weight: 700;
       font-size: 0.8em;
+      text-align: center;
+    }
+    .alllinks {
+      margin: 0;
       text-align: center;
     }
 }
