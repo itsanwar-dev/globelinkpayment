@@ -13,7 +13,7 @@ html{
 
 
 /* -------Header------- */
-.header {
+header {
   display: flex;
   flex-wrap: wrap;
   margin: 40px 0 40px 40px;
@@ -53,14 +53,14 @@ html{
 
 
 input[type=text] {
-  padding: 12px 90px 12px 20px;
+  padding: 12px 10% 12px 20px;
   border: 2px solid #ccc;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
 
 input[type=date] {
-  padding: 10px 10px 10px 15px;
+  padding: 10px 0 10px 0;
   border: 2px solid #ccc;
   border-radius: 5px;
 }
@@ -69,7 +69,7 @@ input[type=date]:hover {
   border-color: #333;
 }
 
-input[type=date]::-webkit-datetime-edit { padding: 0 5em 0 0; }
+input[type=date]::-webkit-datetime-edit { padding: 0 15px 0 15px}
 
 input[type=text]:hover {
   border-color: #333;
@@ -126,7 +126,7 @@ input[type=submit] {
 }
 
 /* -------Footer------- */
-.footer {
+footer {
   display: flex;
   flex-wrap: wrap;
   margin: 270px 50px 0 60px;
@@ -177,23 +177,42 @@ a {
 }
 
 /* Responsive */
+/* Responsive */
+/* Responsive */
+
 @media screen and (max-width: 900px) {
 
 html{
-    background-position: center;
+  background-position: center;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1920px;
+}
 
+header{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5% 0 0 0;
+  justify-content: center;
+  align-items: center;
 }
   .logo {
-    margin: 0 10px 0 80px;
-    text-align: center;
+    margin: 0;
+    justify-content: center;
+  }
+  .firsttext {
+    margin: 5px 10px 5px 10px;
+    flex: 0 0 75%;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
   }
   .inputs {
     flex-direction: column;
+    margin: -145px 0 0 10%;
+    font-size: small;
   }
+
 input[type=date]::-webkit-datetime-edit { padding: 0 8.5em 0 0; }
 
 
@@ -203,12 +222,7 @@ input[type=date]::-webkit-datetime-edit { padding: 0 8.5em 0 0; }
     height: 650px;
     width: 85%;
   }
-  .footer {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0 0 0 0;
-  }
+
   .button {
     margin: 7em 0 0 0;
     padding: 10px 5px 10px 5px;
@@ -227,11 +241,17 @@ input[type=date]::-webkit-datetime-edit { padding: 0 8.5em 0 0; }
     margin: 2em 0 0 0;
   }
   .outputs {
-    margin: 8em 12em 3em 0;
+    margin: 8em 12em 3em 4em;
     text-align: center;
     color: grey;
     font-weight: lighter;
     font-size: small; }
+
+    footer {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
 
     .links {
       margin: 20px 0 5px 0;
