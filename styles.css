@@ -121,7 +121,7 @@ input[type=submit] {
 /* -------Outputs------- */
 .outputs {
   display: flex;
-  margin: 1rem 1rem 5rem 2rem;
+  margin: 3rem 1rem 5rem 2rem;
   color: grey;
   font-weight: lighter;
 }
