@@ -16,7 +16,7 @@ html{
 header {
   display: flex;
   flex-wrap: wrap;
-  margin: 40px 0 40px 40px;
+  margin: 5VH 0 40px 5VH;
 }
 
 .firsttext {
@@ -39,14 +39,15 @@ header {
   margin: 25px 10px 25px 40px;
 }
 
-.rc {
-  margin: 0 10% -350px 65px;
-  height: 500px;
-  width: 85%;
-}
 
 .whitebgdata {
-  z-index: 1;
+display: flex;
+justify-content: flex-start;
+  background-color: white;
+   border-radius: 10px;
+  margin: 1rem 0 0 5rem;
+  height: 50vh;
+  width: 80vw;
 }
 
 /* -------Inputs------- */
@@ -102,7 +103,7 @@ input[type=submit] {
 .inputs {
   display: flex;
   flex-wrap: wrap;
-  margin: -145px 0 0 100px;
+  margin: 0 0 0 1rem;
 }
 
 .item {
@@ -119,8 +120,7 @@ input[type=submit] {
 
 /* -------Outputs------- */
 .outputs {
-  margin: 8em 12em 3em 0;
-  text-align: center;
+  margin: 14em 12em 3em 0;
   color: grey;
   font-weight: lighter;
 }
@@ -129,7 +129,9 @@ input[type=submit] {
 footer {
   display: flex;
   flex-wrap: wrap;
-  margin: 270px 50px 0 60px;
+  margin: 3rem 50px 0 60px;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .button {
@@ -139,12 +141,12 @@ footer {
 }
 
 .accept {
-  margin: 0 20px 0 400px;
+  margin: 0 1rem 0 6rem;
   color: white;
 }
 
 .weaccept {
-  margin: 15px 0 -3px 7px;
+  margin: 10px 0 -3px 7px;
   font-size: 0.8em;
 }
 
@@ -192,9 +194,15 @@ html{
 header{
   display: flex;
   flex-wrap: wrap;
-  margin: 5% 0 0 0;
+  margin: 3VH 0 0 0;
   justify-content: center;
   align-items: center;
+}
+.whitebgdata{
+    flex-direction: column;
+      height: auto;
+      width: auto;
+      margin: 0 10% 0 10%;
 }
   .logo {
     margin: 0;
@@ -206,10 +214,11 @@ header{
     color: white;
     font-size: 10px;
     font-weight: 700;
+    text-align: center;
   }
   .inputs {
-    flex-direction: column;
-    margin: -145px 0 0 10%;
+
+    margin: 0 0 0 5%;
     font-size: small;
   }
 
@@ -217,14 +226,9 @@ input[type=date]::-webkit-datetime-edit { padding: 0 8.5em 0 0; }
 
 
 
-  .rc {
-    margin: 0 10% -500px 8%;
-    height: 650px;
-    width: 85%;
-  }
 
   .button {
-    margin: 7em 0 0 0;
+    margin: 1em 0 0 0;
     padding: 10px 5px 10px 5px;
     color: white;
     border-radius: 5px;
@@ -241,7 +245,6 @@ input[type=date]::-webkit-datetime-edit { padding: 0 8.5em 0 0; }
     margin: 2em 0 0 0;
   }
   .outputs {
-    margin: 8em 12em 3em 4em;
     text-align: center;
     color: grey;
     font-weight: lighter;
